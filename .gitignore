@@ -1,0 +1,67 @@
+# =========================
+# macOS
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =========================
+# VS Code
+# =========================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# =========================
+# STM32CubeIDE / Eclipse workspace files
+# =========================
+.metadata/
+RemoteSystemsTempFiles/
+
+# =========================
+# Build outputs
+# =========================
+Debug/
+Release/
+build/
+Build/
+cmake-build-*/
+out/
+
+# =========================
+# Firmware binaries
+# =========================
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.lst
+*.su
+*.o
+*.obj
+*.d
+*.a
+*.so
+*.dll
+*.exe
+
+# =========================
+# Logs / temporary files
+# =========================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# =========================
+# Test / coverage outputs
+# =========================
+coverage/
+*.gcda
+*.gcno
+*.gcov

@@ -3,24 +3,61 @@
 Top-level layout for the embedded software course project.
 
 ```
-cs_embedded_software/
-├── .github/                # CI workflows, issue templates
-├── build/                  # Build artifacts (ignored in VCS)
-├── docs/                   # Design docs, slides, lab instructions
-├── examples/               # Example applications and usage
-├── include/                # Public headers
-├── src/                    # Source code (drivers, app, board)
-│   ├── board/              # Board support package
-│   ├── drivers/            # Peripheral drivers
-│   └── app/                # Application code
-├── tests/                  # Unit and integration tests
-├── scripts/                # Helper scripts (flash, debug, ci)
-├── tools/                  # Tooling, cross-compilers, utilities
-├── third_party/            # External libraries and submodules
-├── Makefile                # Top-level build file
-├── CMakeLists.txt          # Optional CMake project file
-├── README.md               # This file
-└── LICENSE
+Services
+├── Calibration
+│   ├── imu_calibration.c
+│   ├── imu_calibration.h
+│   ├── barometer_calibration.c
+│   └── barometer_calibration.h
+├── Control
+│   ├── pid.c
+│   ├── pid.h
+│   ├── sigma_controller.c
+│   └── sigma_controller.h
+├── Filters
+│   ├── biquad_filter.c
+│   ├── biquad_filter.h
+│   ├── fir_filter.c
+│   ├── fir_filter.h
+│   ├── moving_average.c
+│   └── moving_average.h
+├── Health
+│   ├── error_manager.c
+│   ├── error_manager.h
+│   ├── health_monitor.c
+│   ├── health_monitor.h
+│   ├── sensor_validator.c
+│   └── sensor_validator.h
+├── Navigation
+│   ├── altitude_estimator.c
+│   ├── altitude_estimator.h
+│   ├── vertical_speed.c
+│   └── vertical_speed.h
+├── Recovery
+│   ├── apam.c
+│   ├── apam.h
+│   ├── landing_detector.c
+│   └── landing_detector.h
+├── SensorFusion
+│   ├── madgwick.c
+│   ├── madgwick.h
+│   ├── orientation.c
+│   └── orientation.h
+├── Storage
+│   ├── data_logger.c
+│   ├── data_logger.h
+│   ├── log_buffer.c
+│   └── log_buffer.h
+├── Telemetry
+│   ├── command_packet.c
+│   ├── command_packet.h
+│   ├── crc.c
+│   ├── crc.h
+│   ├── telemetry_packet.c
+│   └── telemetry_packet.h
+└── Time
+    ├── time_service.c
+    └── time_service.h
 ```
 
 Use this as a starting point; adapt directories to your board, toolchain, and workflow.
