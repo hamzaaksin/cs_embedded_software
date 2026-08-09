@@ -1,28 +1,67 @@
+# =========================
 # macOS
+# =========================
 .DS_Store
+.AppleDouble
+.LSOverride
 
-# STM32CubeIDE / Eclipse
+# =========================
+# Windows
+# =========================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# =========================
+# VS Code
+# =========================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# =========================
+# STM32CubeIDE / Eclipse workspace
+# =========================
 .metadata/
 RemoteSystemsTempFiles/
 
+# =========================
 # Build outputs
+# =========================
 Debug/
 Release/
 build/
 Build/
+cmake-build-*/
+out/
 
+# =========================
 # Firmware outputs
+# =========================
 *.elf
 *.bin
 *.hex
 *.map
 *.list
 *.lst
+*.su
 *.o
 *.obj
 *.d
+*.a
+*.so
+*.dll
+*.exe
 
+# =========================
 # Temporary files
+# =========================
 *.log
 *.tmp
 *.bak
