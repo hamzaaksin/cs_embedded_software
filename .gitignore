@@ -6,6 +6,17 @@
 .LSOverride
 
 # =========================
+# Windows
+# =========================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# =========================
 # VS Code
 # =========================
 .vscode/*
@@ -15,7 +26,7 @@
 !.vscode/launch.json
 
 # =========================
-# STM32CubeIDE / Eclipse workspace files
+# STM32CubeIDE / Eclipse workspace
 # =========================
 .metadata/
 RemoteSystemsTempFiles/
@@ -31,7 +42,7 @@ cmake-build-*/
 out/
 
 # =========================
-# Firmware binaries
+# Firmware outputs
 # =========================
 *.elf
 *.bin
@@ -49,7 +60,7 @@ out/
 *.exe
 
 # =========================
-# Logs / temporary files
+# Temporary files
 # =========================
 *.log
 *.tmp
@@ -57,11 +68,3 @@ out/
 *.swp
 *.swo
 *~
-
-# =========================
-# Test / coverage outputs
-# =========================
-coverage/
-*.gcda
-*.gcno
-*.gcov
